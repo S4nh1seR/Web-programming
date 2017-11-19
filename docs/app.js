@@ -18,7 +18,7 @@ btn.onclick = function() {
 }
 
 var input = document.createElement("input");
-input.id = "add_task";
+input.id = "add_task_input";
 root.appendChild(input);
 
 var but = document.createElement("button");
@@ -30,7 +30,7 @@ but.onclick = function() {
     var newLi = document.createElement("li");
     newUl.appendChild(newLi);
     var span = document.createElement("span");
-    var inText = document.createTextNode(document.getElementById('add_task').value);
+    var inText = document.createTextNode(document.getElementById('add_task_input').value);
     span.appendChild(inText);
     newLi.appendChild(span);
     var btn = document.createElement("button");
